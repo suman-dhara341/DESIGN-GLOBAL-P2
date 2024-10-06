@@ -5,7 +5,7 @@ import Footer from "./component/Footer.jsx";
 export default function App() {
   return (
     <div>
-      <div className="h-72">
+      <div className="">
         <Nabvbar />
       </div>
       <Hero />

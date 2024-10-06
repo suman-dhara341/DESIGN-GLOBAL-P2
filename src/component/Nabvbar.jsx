@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
 import wave from '../assets/wave.png';
 import logo from '../assets/logo.png';
-import img2 from '../assets/2nd.png'
 
 const Navbar = () => {
   const [Bar, setBar] = useState(false);
   const [ToggleDropdown, setToggleDropdown] = useState(false);
   return (
     <>
-      <div className="relative">
+      <div className="relative lg:bg-[#582B80]">
         {/* Background wave image positioned absolutely */}
-        <img src={wave} className="absolute top-0 left-0 w-full h-52 lg:h-64" alt="Wave" />
+        <img src={wave} className="absolute top-0 left-0 w-full h-52 lg:h-64 hidden lg:block" alt="Wave" />
 
         {/* Flex container for logo and menu icon */}
         <div className="flex items-center justify-between p-3 relative z-10 w-full">
@@ -31,7 +30,7 @@ const Navbar = () => {
           </div>
         </div>
         <div>
-          <img src={img2} className='absolute top-14 -z-50 h-52 w-full xl:h-72 lg:h-64' />
+          {/* <img src={img2} className='absolute top-14 -z-50 h-52 w-full xl:h-72 lg:h-64' /> */}
         </div>
       </div>
       
